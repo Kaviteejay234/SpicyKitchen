@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+<title>Spicy Kitchen</title>
+<style>
+div{
+	width:70%;
+	margin-left:10px;
+	font-size:20px;
+	font-weight:bold;
+}
+span{
+color:red;
+}
+#sub{
+color:white;
+background:black;
+padding:15px;
+border-radius:5px;
+}
+form{
+  width:100%;
+  height:450px;
+  background-image:url(images/sincerely-media-HoEYgBL_Gcs-unsplash.jpg);
+  font-weight:bold;
+  background-repeat:no-repeat;
+  background-size:100% 100%;
+  border:1px solid white;
+}
+input{
+	  margin:5px;
+	  padding:10px;
+	  text-align:center;
+	  display:inline-block;
+  }
+</style>
+<script src="reserve.js"></script>
+</head>
+<body>
+<form onsubmit="return checking()">
+<h1>Reservation Table</h1>
+<div>
+<p>Full Name: 
+	<input type="text" id="box1">
+    <span id="ers1"></span>
+</p></div>
+<div>
+<p>Email Address:
+	<input type="email" placeholder="your@email.com" id="box2">
+	<span id="ers2"></span>
+</p></div>
+<div>
+<p>Phone No:
+	<input type="text" id="box3">
+	<span id="ers3"></span>
+</p></div>
+<div>
+<p>No of Persons:
+	<input type="text" placeholder="12 persons" id="box4">
+	<span id="ers4"></span>
+</p></div>
+<div>
+<p>Date:
+	<input type="date" id="box5">
+	<span id="ers5"></span>
+</p></div>
+<div>
+<p>Time:
+	<input type="time" id="box6">
+	<span id="ers6"></span>
+</p></div>
+<div>
+<p>Special Request:
+	<textarea minlength="3" maxlength="100" id="box7"></textarea>
+	<span id="ers7"></span>
+</p></div>
+	 <input type="submit" value="Submit Request" id="sub">
+</div>
+</form>
+</body>
+</html>
